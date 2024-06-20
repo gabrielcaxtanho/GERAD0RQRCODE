@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/reset.css') }}">
+
+    <title>GERADOR QR CODE</title>
+</head>
+<body>
+    <main class="menu">
+        <div class="menu_central">
+            <h1 class="nome_menu">LYN</h1>
+            <img src="{{ url_for('static', filename='imagens/tatto.png') }}" alt="Example Image" class="tatto">
+        </div>
+    </main>
+
+
+    <h1 class="texto_central">GERADOR DE QR CODE</h1>
+
+
+    <section class="container_pai">
+        <div class="container_central">
+            <div class="container_primario">
+                <img src="{{ url_for('static', filename='imagens/Default_qrcode_2.jpg') }}" alt="Example Image" class="imagemqrcode">
+            </div>
+        </div>
+        <div class="secundario">
+            <div class="container_secundario">
+                <form method="post" action="/" class="container_formulario">
+                    <label for="url" class="texto_principal_card">Coloque aqui a URL:</label>
+                    <input type="text" id="url" name="url" required placeholder="Digite a URL aqui" class="check">
+                    <button type="submit" class="glow-on-hover">Gerar QrCode</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="final">
+        <div class="final_final">
+            <h1>® 2024 Gabriel vieira castanho chaves. Todos os direitos reservados.  Conteúdo sujeito a disponibilidade.</h1>
+            <h1>LYN é um serviço gratuito, sujeito a termos e condições. O serviço LYN é comercializado por GB Sistemas de Informática S.A.</h1>
+        </div>
+    </footer>
+
+
+</body>
+</html>
